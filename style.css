@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.fundo {
+  pointer-events: none;
+  background-image: url(img/fundo.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20%;
+}
+button {
+  color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  outline-color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: large;
+  font-weight: bolder;
+  display: flex;
+}
+
+button:hover {
+  background-color: rgb(126, 14, 14);
+}
+
+button:focus {
+  background-color: rgb(126, 14, 14);
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="button"]:focus {
+  background-color: rgb(126, 14, 14);
+}
+input[type="button"]:hover {
+  background-color: rgb(126, 14, 14);
+}
+input[type="reset"]:hover {
+  background-color: rgb(126, 14, 14);
+}
+
+input[type="button"] {
+  background-color: transparent;
+  color: white;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  outline-color: white;
+  cursor: pointer;
+  width: 140px;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+input[type="reset"] {
+  background-color: transparent;
+  color: white;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  outline-color: white;
+  cursor: pointer;
+  width: 140px;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+  left: 20px;
+  top: 22px;
+}
+input[type="email"] {
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 25px;
+  background: transparent;
+  width: 300px;
+  font-size: large;
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+input[type="tel"] {
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 25px;
+  background: transparent;
+  width: 300px;
+  font-size: large;
+  position: relative;
+  left: 20px;
+  top: 2px;
+}
+input[type="text"] {
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 25px;
+  background: transparent;
+  width: 250px;
+  font-size: large;
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+input[type="password"] {
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 25px;
+  background: transparent;
+  width: 250px;
+  font-size: large;
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+textarea {
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 25px;
+  background: transparent;
+  width: 300px;
+  height: 300px;
+  font-size: large;
+  position: relative;
+  left: 20px;
+  top: 13px;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+  align-content: center;
+}
+.content {
+  color: #da464c;
+  font-weight: 700;
+  font-size: xx-large;
+}
+.login-form {
+  width: 100%;
+  height: 72vh;
+  background: linear-gradient(#da464c, #f3fafa);
+  position: absolute;
+  top: 16em;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+.side-bar {
+  width: 4em;
+  height: 72vh;
+  background: linear-gradient(#da464c, #f3fafa);
+  position: absolute;
+  right: 0;
+  top: 16em;
+}
+.social-links img,
+.useful-links img {
+  width: 40px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.social-links {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  top: 150px;
+}
+
+.useful-links {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  top: 300px;
+}
+.flakes img {
+  width: 50px;
+  animation: flake 7s linear infinite;
+  filter: contrast(500);
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer / Edge */
+  user-select: none;
+  /* Non-prefixed version */
+}
+.flakes {
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: -200px;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer / Edge */
+  user-select: none;
+  /* Non-prefixed version */
+}
+
+@keyframes flake {
+  0% {
+    transform: translateY(-20vh);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(105vh);
+    opacity: 1;
+  }
+}
+.flakes img:nth-child(1) {
+  animation-delay: 2s;
+  width: 50px;
+}
+.flakes img:nth-child(2) {
+  animation-delay: 4s;
+  width: 75px;
+}
+.flakes img:nth-child(3) {
+  animation-delay: 3s;
+  width: 100px;
+}
+.flakes img:nth-child(4) {
+  animation-delay: 7s;
+  width: 150px;
+}
+.flakes img:nth-child(5) {
+  animation-delay: 1s;
+  width: 50px;
+}
+.flakes img:nth-child(6) {
+  animation-delay: 7s;
+}
+.flakes img:nth-child(7) {
+  animation-delay: 2s;
+}
+.flakes img:nth-child(8) {
+  animation-delay: 3s;
+  width: 50px;
+}
+.flakes img:nth-child(9) {
+  animation-delay: 5s;
+  width: 75px;
+}
+.flakes img:nth-child(10) {
+  animation-delay: 4s;
+  width: 150px;
+}
+.flakes img:nth-child(11) {
+  animation-delay: 3s;
+}
+.flakes img:nth-child(12) {
+  animation-delay: 5s;
+  width: 50px;
+}
+.flakes img:nth-child(13) {
+  animation-delay: 7s;
+  width: 75px;
+}
+.flakes img:nth-child(14) {
+  animation-delay: 2s;
+  width: 75px;
+}
+.flakes img:nth-child(15) {
+  animation-delay: 1s;
+  width: 100px;
+}
+.flakes img:nth-child(16) {
+  animation-delay: 3s;
+  width: 50px;
+}
+.flakes img:nth-child(17) {
+  animation-delay: 4s;
+  width: 75px;
+}
+.flakes img:nth-child(18) {
+  animation-delay: 5s;
+  width: 75px;
+}
+.flakes img:nth-child(19) {
+  animation-delay: 2s;
+  width: 100px;
+}
+.flakes img:nth-child(20) {
+  animation-delay: 6s;
+  width: 75px;
+}
+.flakes img:nth-child(21) {
+  animation-delay: 2s;
+  width: 150px;
+}
